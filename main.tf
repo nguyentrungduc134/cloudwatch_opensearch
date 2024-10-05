@@ -123,7 +123,7 @@ resource "aws_lambda_permission" "cloudwatch-logs-invoke-elasticsearch-lambda" {
 
 
 ###########################################
-# Deploy a subscription filter on RDS Cloudwatch Logs
+# Deploy a subscription filter on  Cloudwatch Logs
 ###########################################
 resource "aws_cloudwatch_log_subscription_filter" "log_cw_subscription" {
   name            = format("subsr-%s-%s-logs", var.environment, var.log_name)
