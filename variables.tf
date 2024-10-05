@@ -50,12 +50,12 @@ variable "filter_pattern" {
 }
 
 variable "vpc_id" {
-  description = "The ID of the VPC where resources will be created"
+  description = "The ID of the VPC where lambda will be created (opensearch)"
   type        = string
 }
 
 variable "subnet_ids" {
-  description = "A list of Subnet IDs where resources will be deployed"
+  description = "A list of Subnet IDs where lambda will be deployed"
   type        = list(string)
 }
 
