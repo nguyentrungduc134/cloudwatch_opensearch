@@ -141,7 +141,7 @@ resource "aws_lambda_permission" "cloudwatch-logs-invoke-elasticsearch-lambda" {
 ```
 
 ### CloudWatch Log Subscription Filter
-A CloudWatch log subscription filter is created to forward RDS logs to the Lambda function for processing.
+A CloudWatch log subscription filter is created to forward  logs to the Lambda function for processing.
 
 ```hcl
 resource "aws_cloudwatch_log_subscription_filter" "log_cw_subscription" {
